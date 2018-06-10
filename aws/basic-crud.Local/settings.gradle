@@ -1,0 +1,4 @@
+rootProject.name = 'basic-crud.Local'
+
+project(':basic-crud').projectDir = new File('../basic-crud')
+
