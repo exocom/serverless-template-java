@@ -26,7 +26,6 @@ repositories {
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
     compile "com.sparkjava:spark-kotlin:1.0.0-alpha"
-    compile project(":basic-crud")
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
 
