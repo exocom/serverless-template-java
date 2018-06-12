@@ -1,5 +1,5 @@
-import spark.kotlin.*
-import java.lang.Class
+import spark.kotlin.Http
+import spark.kotlin.ignite
 
 fun main(args: Array<String>) {
     val http: Http = ignite()

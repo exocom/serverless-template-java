@@ -32,3 +32,6 @@ build.dependsOn buildZip
 task wrapper(type: Wrapper) {
     gradleVersion = '3.2.1'
 }
+
+group "com.kalarrs"
+version "1.0"

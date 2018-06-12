@@ -1,13 +1,11 @@
 package com.serverless;
 
+import com.amazonaws.services.lambda.runtime.Context;
+import com.amazonaws.services.lambda.runtime.RequestHandler;
+import org.apache.log4j.Logger;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
-
-import org.apache.log4j.Logger;
-
-import com.amazonaws.services.lambda.runtime.Context;
-import com.amazonaws.services.lambda.runtime.RequestHandler;
 
 public class Handler implements RequestHandler<Map<String, Object>, ApiGatewayResponse> {
 
@@ -27,7 +25,7 @@ public class Handler implements RequestHandler<Map<String, Object>, ApiGatewayRe
 				.build();
 	}
 
-	public int foo() {
-		return 1;
+	public String foo() {
+		return "This is the foo method!";
 	}
 }
